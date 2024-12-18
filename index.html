@@ -1,18 +1,86 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4caf50;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin: 10px 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e2e2e2;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
 <body>
-    <p> String 1<P>
-    <input type="text" id="string1" ><br><br>
-    <p> String 2<P>
-    <input type="text" id="string2" ><br><br>
-    <p> string 2 <P>
-    <input type="text" id="string3" ><br><br>
+    <div class="container">
+        <p>String 1</p>
+        <input type="text" id="string1"><br><br>
+        <p>String 2</p>
+        <input type="text" id="string2"><br><br>
+        <p>String 3</p>
+        <input type="text" id="string3"><br><br>
 
-    <button onclick="resetFields()">Reset</button>
-    <button onclick="calculateResult()">Calculate</button>
+        <button onclick="resetFields()">Reset</button>
+        <button onclick="calculateResult()">Calculate</button>
 
-    <div id="result">Result: </div>
+        <div id="result">Result: </div>
+    </div>
 
     <script>
         function resetFields() {
@@ -56,4 +124,6 @@
         }
     </script>
 </body>
+
 </html>
+
